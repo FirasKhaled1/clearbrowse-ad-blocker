@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="popup.css">
+</head>
+<body>
+    <div class="section-title">BLOCK ADS ON</div>
+    
+    <div class="control-row">
+        <div class="control-text">
+            <strong>This website:</strong>
+            <span id="current-domain">loading...</span>
+        </div>
+        <label class="switch">
+            <input type="checkbox" id="site-toggle" checked>
+            <span class="slider round"></span>
+        </label>
+    </div>
+
+    <div class="section-title">NUMBER OF ITEMS BLOCKED</div>
+    
+    <div class="stats-container">
+        <div class="stat-box border-right">
+            <span class="stat-label">on this page</span>
+            <span class="stat-number" id="page-count">0</span>
+        </div>
+        <div class="stat-box">
+            <span class="stat-label">in total</span>
+            <span class="stat-number" id="total-count">--</span>
+        </div>
+    </div>
+
+    <script src="popup.js"></script>
+</body>
+</html>

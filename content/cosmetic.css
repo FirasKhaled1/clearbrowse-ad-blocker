@@ -1,0 +1,47 @@
+/* ==========================================================================
+   1. Generic Display Ad & Container Collapse
+   ========================================================================== */
+ins.adsbygoogle,
+div[id^="google_ads_"],
+div[id^="div-gpt-ad"],
+.ad-container,
+.ad-box,
+.advertisement,
+.adsbox,
+.AdHolder,
+[data-ad-unit],
+[data-ad-slot] {
+    display: none !important;
+    visibility: hidden !important;
+    height: 0 !important;
+    min-height: 0 !important;
+    padding: 0 !important;
+    margin: 0 !important;
+}
+
+/* ==========================================================================
+   2. Amazon Sponsored Products & Search Ads
+   ========================================================================== */
+/* Hide search product cards bearing sponsored identifiers */
+div[data-asin]:has(span.puis-sponsored-label-text),
+div[data-asin]:has(.s-sponsored-label-info-icon),
+div[data-asin]:has(.puis-label-popover-default),
+div[data-component-type="sp-sponsored-result"],
+div[data-component-type="s-impression-counter"],
+.AdHolder {
+    display: none !important;
+}
+
+/* ==========================================================================
+   3. YouTube In-Feed Promotions & Player Overlays
+   ========================================================================== */
+ytd-ad-slot-renderer,
+ytd-rich-item-renderer:has(ytd-ad-slot-renderer),
+ytd-banner-promo-renderer,
+ytd-in-feed-ad-layout-renderer,
+ytd-engagement-panel-section-list-renderer[target-id="engagement-panel-ads"],
+#player-ads,
+.ytp-ad-overlay-container,
+.ytp-ad-message-container {
+    display: none !important;
+}

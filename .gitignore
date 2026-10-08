@@ -1,0 +1,21 @@
+# Python bytecode and caches
+__pycache__/
+*.py[cod]
+*$py.class
+*.env
+.venv/
+env/
+
+# Operating system artifacts
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Editor working directories
+.vscode/
+.idea/
+
+# Distribution archives
+*.zip
+*.crx_metadata/
+_metadata/
